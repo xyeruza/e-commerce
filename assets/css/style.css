@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: pink;
+}
+
+header,
+footer {
+  display: grid;
+  grid-template-rows: 200px;
+}
+
+header {
+  grid-area: header;
+  background-image: url("../img/headericon.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 10%;
+  background-color: pink;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  font-size: 1.5em;
+}
+
+aside {
+  grid-area: aside;
+  background-color: rgb(245, 185, 195);
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.1em;
+}
+
+.nav-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
+  margin-top: 10%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 1.5em;
+}
+
+.nav-item {
+  margin-top: 10%;
+}
+
+li:hover {
+  color: #f2e8df;
+  cursor: pointer;
+}
+
+main {
+  grid-area: main;
+  background-color: #d8c2b5;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 20% auto auto;
+  grid-template-areas:
+    "header header header"
+    "aside main main"
+    "footer footer footer";
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  background-color: rgb(245, 185, 195);
+  padding: 30px;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 1.2em;
+}
+
+.item-img {
+  width: 250px;
+  height: 300px;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+.btn {
+  min-width: 130px;
+  height: 40px;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  background: rgb(235, 164, 176);
+}
+
+.text-card {
+  padding-bottom: 2%;
+  margin-bottom: 2%;
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(231, 162, 174);
+  color: black;
+  background-size: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.section-footer {
+  display: flex;
+  align-items: center;
+  padding: 5%;
+}
+
+.item-icon {
+  padding: 0.3em;
+}
